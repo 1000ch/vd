@@ -1,0 +1,11 @@
+{
+  "name": "vd",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^3.0.1"
+  }
+}
