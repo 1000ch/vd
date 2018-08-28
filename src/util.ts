@@ -1,5 +1,5 @@
-import VNode from "./VNode";
-import VText from "./VText";
+import VNode from './VNode.js';
+import VText from './VText.js';
 
 export function isDefined(arg: any): boolean {
   return arg !== undefined;

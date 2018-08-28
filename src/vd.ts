@@ -1,6 +1,6 @@
-import { isTextNode } from './util';
-import VNode from "./VNode";
-import VText from "./VText";
+import { isTextNode } from './util.js';
+import VNode from './VNode.js';
+import VText from './VText.js';
 
 function createAttributeMap(attributes: NamedNodeMap): Map<string, any> {
   const map = new Map();
@@ -44,7 +44,7 @@ export function createNode(vnode: VNode): Node {
 
   attributes.forEach((key, value) => {
     node.setAttribute(key, value);
-  })
+  });
 
   childNodes.forEach(childNode => {
     if (isTextNode(childNode)) {

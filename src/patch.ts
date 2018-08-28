@@ -1,7 +1,7 @@
-import { createText, createNode } from './vd';
-import { isDefined, isTextNode } from './util';
-import VNode from './VNode';
-import VText from './VText';
+import { createText, createNode } from './vd.js';
+import { isDefined, isTextNode } from './util.js';
+import VNode from './VNode.js';
+import VText from './VText.js';
 
 type V = VNode | VText;
 
@@ -10,11 +10,7 @@ function isChanged(oldV: V, newV: V): boolean {
     return true;
   }
 
-  if (!isTextNode(oldV) && isTextNode(newV)) {
-    return true;
-  }
-
-  if (isTextNode(oldV) && !isTextNode(newV)) {
+  if (isTextNode(oldV) || isTextNode(newV)) {
     return true;
   }
 

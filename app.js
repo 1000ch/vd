@@ -1,5 +1,5 @@
 import { createPatch } from './lib/patch.js';
-import { createVNodes } from './lib/VNode.js';
+import { createVNodes } from './lib/vd.js';
 
 function render(vnode, rootNode) {
   if (app.$vnode === undefined) {

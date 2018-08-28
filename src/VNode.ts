@@ -1,4 +1,4 @@
-import VText from "./VText";
+import VText from './VText.js';
 
 export default interface VNode {
   nodeType: number;
